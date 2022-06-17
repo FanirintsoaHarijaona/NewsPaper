@@ -5,7 +5,7 @@
 {% block content %} 
     <div class="card-entry">
         <h2>{{object.title}}</h2>
-        <p>by {{object.author}} at {{object.date}} </p>
+        <p>by {{object.authors}} on {{object.date}} </p>
         <p>{{object.body}}</p>
     </div>
     <p><a href="{% url 'article_edit' article.pk %}">Edit</a>
